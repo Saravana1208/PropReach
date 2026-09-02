@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-background: #FDFBF7;
+    --color-surface: #FFFFFF;
+    --color-primary: #1C1917;
+    --color-secondary: #57534E;
+    --color-border: #E7E5E4;
+    /* Vibrant but balanced Lime Green Accent */
+    --color-brand: #BEF264;
+    --color-accent: #A3E635;
+    --color-accent-hover: #D9F99D;
+  }
+
+  body {
+    @apply bg-background text-primary font-sans antialiased transition-colors duration-300;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-medium tracking-tight;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
