@@ -1,78 +1,81 @@
 import React from 'react';
-import { SectionHeader } from './SectionHeader';
 import { Reveal } from './Reveal';
-import { Rocket, PenTool, Target, Monitor, PhoneCall, Workflow } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { cn } from '../utils';
 
 const services = [
   {
-    icon: Rocket,
-    title: 'Launch strategy and positioning',
+    title: 'Launch strategy',
     desc: 'Deep market analysis and positioning to ensure your property stands out.',
-    image: '/images/aerial.png'
+    image: '/images/gallery1.png'
   },
   {
-    icon: PenTool,
-    title: 'Brand identity and campaign creative',
+    title: 'Brand identity',
     desc: 'High-end visuals, copywriting, and brand assets that build trust and desire.',
     image: '/images/interior.png'
   },
   {
-    icon: Target,
-    title: 'Performance marketing and lead generation',
+    title: 'Performance marketing',
     desc: 'Laser-targeted advertising across Google, Meta, and niche platforms.',
-    image: '/images/dashboard.png'
+    image: '/images/gallery2.png'
   },
   {
-    icon: Monitor,
-    title: 'Landing pages and websites',
+    title: 'Landing pages',
     desc: 'Conversion-optimized digital experiences designed to capture high-intent buyers.',
-    image: '/images/hero.png'
+    image: '/images/gallery3.png'
   },
   {
-    icon: PhoneCall,
-    title: 'Lead qualification and follow-up',
+    title: 'Lead qualification',
     desc: 'Rapid response protocols to ensure no qualified lead goes cold.',
-    image: '/images/interior.png'
+    image: '/images/midfunnel_whatsapp.png'
   },
   {
-    icon: Workflow,
-    title: 'CRM, WhatsApp, reporting, and sales enablement',
+    title: 'CRM integration',
     desc: 'Full-stack technology integration to arm your sales team with actionable data.',
-    image: '/images/dashboard.png'
+    image: '/images/midfunnel_crm.png'
   }
 ];
 
 export function Services() {
   return (
-    <section id="services" className="py-32 lg:py-48 bg-surface">
+    <section id="services" className="dark-section py-32 lg:py-48 bg-background text-primary">
       <div className="container mx-auto px-6 max-w-7xl">
         <Reveal>
-          <SectionHeader 
-            title="The complete growth engine."
-            subtitle="You fund the advertising. We take care of the rest."
-          />
+          <div className="mb-24 text-center max-w-3xl mx-auto">
+            <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-8">
+              The complete <span className="text-secondary">growth engine.</span>
+            </h2>
+            <p className="text-xl text-secondary">
+              You fund the advertising. We take care of the rest.
+            </p>
+          </div>
         </Reveal>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-24">
+        <div className="flex flex-col border-t border-border mt-16">
           {services.map((service, i) => (
-            <Reveal key={service.title} delay={i * 0.1} className="h-full">
-              <div className="group h-full flex flex-col bg-background rounded-3xl border border-border overflow-hidden hover:shadow-lg transition-all duration-500">
-                <div className="h-48 overflow-hidden relative">
-                  <div className="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors z-10" />
-                  <img 
-                    src={service.image} 
-                    alt={service.title}
-                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out grayscale-[20%] group-hover:grayscale-0"
-                  />
+            <Reveal key={service.title} delay={0.1}>
+              <div className="group relative border-b border-border py-12 cursor-pointer flex flex-col md:flex-row md:items-center justify-between overflow-hidden">
+                <div className="absolute inset-0 z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
+                  <div className="absolute inset-0 bg-black/60 z-10" />
+                  <img src={service.image} alt={service.title} className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000 ease-out" />
                 </div>
                 
-                <div className="p-8 flex flex-col flex-grow relative bg-background">
-                  <div className="w-12 h-12 rounded-full bg-brand text-primary flex items-center justify-center mb-6 absolute -top-6 right-8 border-4 border-background group-hover:bg-primary group-hover:text-background transition-colors duration-300 shadow-sm">
-                    <service.icon size={20} strokeWidth={2} />
+                <div className="relative z-10 flex flex-col md:flex-row md:items-center w-full gap-8 md:gap-16">
+                  <div className="flex items-start md:items-center gap-8 md:gap-16 md:w-1/2">
+                    <span className="text-sm font-mono tracking-widest text-secondary uppercase bg-surface/50 backdrop-blur-md px-3 py-1 rounded-full border border-border">
+                      {String(i + 1).padStart(2, '0')}
+                    </span>
+                    <p className="text-lg text-secondary group-hover:text-white/80 transition-colors duration-300 max-w-xs font-light">
+                      {service.desc}
+                    </p>
                   </div>
-                  <h3 className="text-xl font-display font-medium text-primary mb-3 leading-tight">{service.title}</h3>
-                  <p className="text-secondary leading-relaxed font-light">{service.desc}</p>
+                  
+                  <div className="flex items-center justify-between md:w-1/2">
+                    <h3 className="text-4xl md:text-5xl font-bold tracking-tight text-primary group-hover:text-white transition-colors duration-300">
+                      {service.title}
+                    </h3>
+                    <ArrowRight className="text-primary group-hover:text-white group-hover:translate-x-2 transition-all duration-300 w-8 h-8 opacity-0 group-hover:opacity-100" />
+                  </div>
                 </div>
               </div>
             </Reveal>

@@ -3,9 +3,12 @@ import Lenis from 'lenis';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { Hero } from './components/Hero';
+import { ValueProposition } from './components/ValueProposition';
+import { WhyPropReach } from './components/WhyPropReach';
 import { PartnershipModel } from './components/PartnershipModel';
 import { Services } from './components/Services';
 import { MidFunnelSection } from './components/MidFunnelSection';
+import { TrackRecord } from './components/TrackRecord';
 import { GallerySection } from './components/GallerySection';
 import { AboutDigiSailor } from './components/AboutDigiSailor';
 import { Offices } from './components/Offices';
@@ -48,9 +51,12 @@ function App() {
         <Navbar />
         <main className="flex-grow pt-24 lg:pt-32">
           <Hero />
+          <ValueProposition />
+          <WhyPropReach />
           <PartnershipModel />
           <Services />
           <MidFunnelSection />
+          <TrackRecord />
           <GallerySection />
           <AboutDigiSailor />
           <Offices />
