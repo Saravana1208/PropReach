@@ -10,7 +10,7 @@ export function Footer() {
           <div className="flex flex-col md:flex-row items-center gap-6">
             <div className="text-xl font-bold tracking-tight text-primary flex items-center gap-2 uppercase leading-none">
               <span>PropReach</span>
-              <span className="text-[10px] text-secondary tracking-widest mt-0.5">by DigiSailor</span>
+              <span className="text-[10px] text-secondary tracking-widest mt-0.5">by <a href="https://www.digisailor.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors hover:underline">DigiSailor</a></span>
             </div>
             
             <div className="hidden md:block w-px h-4 bg-border" />
@@ -22,7 +22,7 @@ export function Footer() {
           </div>
           
           <div className="flex flex-col md:flex-row items-center gap-6 text-[13px] font-sans tracking-widest uppercase font-medium text-secondary">
-            <p>&copy; {currentYear} DigiSailor.</p>
+            <p>&copy; {currentYear} <a href="https://www.digisailor.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors hover:underline">DigiSailor</a>.</p>
           </div>
         </div>
       </div>

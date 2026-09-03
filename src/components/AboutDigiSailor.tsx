@@ -75,10 +75,10 @@ export function AboutDigiSailor() {
           <Reveal>
             <div className="max-w-xl">
               <h2 className="text-5xl md:text-6xl font-bold tracking-tight text-primary mb-8 leading-tight">
-                Backed by <span className="text-secondary">DigiSailor.</span>
+                Backed by <span className="text-secondary"><a href="https://www.digisailor.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors hover:underline">DigiSailor.</a></span>
               </h2>
               <p className="text-xl text-secondary leading-relaxed mb-12">
-                PropReach is powered by DigiSailor's <span className="text-primary font-bold">13+ years of digital experience</span> supporting property growth. 
+                PropReach is powered by <a href="https://www.digisailor.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors hover:underline">DigiSailor's</a> <span className="text-primary font-bold">13+ years of digital experience</span> supporting property growth. 
                 With 160+ people across our teams, 400+ clients supported, and 800+ projects completed, 
                 we combine technology, creative thinking, and performance marketing to help property inventory move.
               </p>

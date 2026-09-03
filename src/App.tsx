@@ -49,7 +49,7 @@ function App() {
       <div className="flex flex-col min-h-screen">
         <AnnouncementBar />
         <Navbar />
-        <main className="flex-grow pt-24 lg:pt-32">
+        <main className="flex-grow">
           <Hero />
           <ValueProposition />
           <WhyPropReach />

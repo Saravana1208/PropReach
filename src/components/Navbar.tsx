@@ -36,14 +36,14 @@ export function Navbar() {
     <>
       <header
         className={cn(
-          'fixed top-0 left-0 right-0 z-40 transition-all duration-300 border-b',
+          'sticky top-0 z-40 transition-all duration-300 border-b w-full',
           scrolled ? 'bg-background/90 backdrop-blur-xl py-4 border-border/50 shadow-sm' : 'bg-transparent py-6 border-transparent'
         )}
       >
         <div className="container mx-auto px-6 lg:px-12 max-w-[1400px] flex items-center justify-between">
           <a href="#" className="font-bold tracking-tight text-xl text-primary z-50 flex flex-col uppercase leading-none">
             <span>PropReach</span>
-            <span className="text-[10px] text-secondary tracking-widest mt-0.5">by DigiSailor</span>
+            <span className="text-[10px] text-secondary tracking-widest mt-0.5">by <a href="https://www.digisailor.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors hover:underline">DigiSailor</a></span>
           </a>
 
           {/* Desktop Nav */}
