@@ -7,32 +7,32 @@ const services = [
   {
     title: 'Launch strategy',
     desc: 'Deep market analysis and positioning to ensure your property stands out.',
-    image: '/images/gallery1.png'
+    image: '/images/about-team.jpg'
   },
   {
     title: 'Brand identity',
     desc: 'High-end visuals, copywriting, and brand assets that build trust and desire.',
-    image: '/images/interior.png'
+    image: '/images/approach-model.jpg'
   },
   {
     title: 'Performance marketing',
     desc: 'Laser-targeted advertising across Google, Meta, and niche platforms.',
-    image: '/images/gallery2.png'
+    image: '/images/gallery1.png'
   },
   {
     title: 'Landing pages',
     desc: 'Conversion-optimized digital experiences designed to capture high-intent buyers.',
-    image: '/images/gallery3.png'
+    image: '/images/gallery2.png'
   },
   {
     title: 'Lead qualification',
     desc: 'Rapid response protocols to ensure no qualified lead goes cold.',
-    image: '/images/midfunnel_whatsapp.png'
+    image: '/images/gallery3.png'
   },
   {
     title: 'CRM integration',
     desc: 'Full-stack technology integration to arm your sales team with actionable data.',
-    image: '/images/midfunnel_crm.png'
+    image: '/images/interior.png'
   }
 ];
 

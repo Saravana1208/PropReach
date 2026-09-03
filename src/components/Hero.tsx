@@ -98,7 +98,7 @@ export function Hero() {
           <div className="relative rounded-3xl overflow-hidden bg-surface shadow-2xl">
             <div className="rounded-3xl overflow-hidden relative group aspect-[4/5]">
               <img 
-                src="/images/interior.png" 
+                src="/images/hero-interior.jpg" 
                 alt="Editorial Real Estate Architecture" 
                 className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out"
               />

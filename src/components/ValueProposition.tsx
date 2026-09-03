@@ -1,12 +1,16 @@
 import React from 'react';
 import { Reveal } from './Reveal';
+import img1 from '../assets/aerial-view-of-suburban-homes-with-red-tile-roofs-2026-03-17-06-41-24-utc.jpg';
+import img2 from '../assets/modern-residential-building-with-a-blue-sky-backdr-2026-03-25-22-54-48-utc.jpg';
+import img3 from '../assets/professionals-strolling-near-suburban-house-during-2026-03-10-03-18-32-utc.jpg';
+import img4 from '../assets/row-houses-in-berlin-with-blue-sky-2026-03-25-22-53-00-utc.jpg';
 
 export function ValueProposition() {
   const images = [
-    '/images/gallery1.png',
-    '/images/interior.png',
-    '/images/gallery3.png',
-    '/images/gallery2.png',
+    img1,
+    img2,
+    img3,
+    img4,
   ];
 
   return (

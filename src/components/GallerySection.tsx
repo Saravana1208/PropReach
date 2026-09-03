@@ -4,10 +4,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, ZoomIn } from 'lucide-react';
 
 const images = [
-  { src: '/images/gallery1.png', alt: 'Modern luxury villa exterior', span: 'md:col-span-2 md:row-span-2' },
-  { src: '/images/interior.png', alt: 'Luxury apartment interior', span: 'md:col-span-1 md:row-span-1' },
-  { src: '/images/gallery3.png', alt: 'Coastal property aerial', span: 'md:col-span-1 md:row-span-1' },
-  { src: '/images/gallery2.png', alt: 'Minimalist living room', span: 'md:col-span-2 md:row-span-1' },
+  { src: '/images/low-angle-view-of-beautiful-modern-houses-against-2026-03-13-01-23-33-utc.jpg', alt: 'Modern luxury housing', span: 'md:col-span-2 md:row-span-2' },
+  { src: '/images/modern-apartment-buildings-in-a-residential-urban-2026-03-19-21-55-25-utc.jpg', alt: 'Modern apartments', span: 'md:col-span-1 md:row-span-1' },
+  { src: '/images/white-and-orange-colored-modern-townhouses-at-berl-2026-03-25-22-56-21-utc.jpg', alt: 'Modern townhouses', span: 'md:col-span-1 md:row-span-1' },
 ];
 
 export function GallerySection() {

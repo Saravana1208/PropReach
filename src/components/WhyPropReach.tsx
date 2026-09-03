@@ -1,5 +1,6 @@
 import React from 'react';
 import { Reveal } from './Reveal';
+import aerialVideo from '../assets/Areil View of Real Estate.mov';
 
 export function WhyPropReach() {
   return (
@@ -25,10 +26,6 @@ export function WhyPropReach() {
 
         <Reveal delay={0.2}>
           <div className="w-full h-[400px] md:h-[600px] lg:h-[700px] rounded-3xl overflow-hidden shadow-2xl relative bg-surface">
-            {/* 
-              Using a reliable Mixkit architectural stock video for the demo.
-              Replace with your actual local or hosted real estate video.
-            */}
             <video
               autoPlay
               loop
@@ -36,7 +33,8 @@ export function WhyPropReach() {
               playsInline
               className="w-full h-full object-cover grayscale-[10%]"
             >
-              <source src="https://assets.mixkit.co/videos/preview/mixkit-modern-city-skyscrapers-in-the-afternoon-4217-large.mp4" type="video/mp4" />
+              <source src={aerialVideo} type="video/quicktime" />
+              <source src={aerialVideo} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>

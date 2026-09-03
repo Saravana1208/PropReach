@@ -4,44 +4,24 @@ import { ArrowUpRight } from 'lucide-react';
 
 const projects = [
   {
-    image: '/images/gallery1.png',
+    image: '/images/hero.png',
     type: 'Luxury Villas',
     status: 'Sold Out'
   },
   {
-    image: '/images/interior.png',
+    image: '/images/hero-residence.jpg',
     type: 'Penthouse Suites',
     status: '90% Cleared'
   },
   {
-    image: '/images/gallery3.png',
+    image: '/images/hero-towers.jpg',
     type: 'Coastal Apartments',
     status: 'Sold'
   },
   {
-    image: '/images/gallery2.png',
+    image: '/images/hero-villa.jpg',
     type: 'Urban Condos',
     status: 'Launched'
-  },
-  {
-    image: '/images/gallery1.png',
-    type: 'Commercial Hub',
-    status: 'Fully Leased'
-  },
-  {
-    image: '/images/interior.png',
-    type: 'Boutique Hotel',
-    status: 'Acquired'
-  },
-  {
-    image: '/images/gallery3.png',
-    type: 'Waterfront Estate',
-    status: 'Sold Out'
-  },
-  {
-    image: '/images/gallery2.png',
-    type: 'High-Rise Towers',
-    status: 'Phase 1 Closed'
   }
 ];
 
